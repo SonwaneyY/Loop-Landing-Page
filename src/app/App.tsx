@@ -53,10 +53,10 @@ export default function App() {
       <Navbar />
       {/* Pattern 1+6 — Asymmetric hero + dual-tone glow */}
       <HeroSection />
+      {/* Pattern 4 — Stat counter (count-up already implemented) */}
+      <StatsSection />
       {/* Pattern 8 — Animated product preview (typewriter) */}
       <ProductPreviewSection />
-{/* Pattern 4 — Stat counter (count-up already implemented) */}
-      <StatsSection />
       {/* Insight / ATS gap */}
       <InsightSection />
       {/* Pattern 2 — Sticky scroll feature walkthrough */}
