@@ -3,7 +3,6 @@ import { Toaster } from "sonner";
 import faviconImg from "../imports/Favicon.png";
 import { Navbar } from "./components/Navbar";
 import { HeroSection } from "./components/HeroSection";
-import { ProblemSection } from "./components/ProblemSection";
 import { StatsSection } from "./components/StatsSection";
 import { InsightSection } from "./components/InsightSection";
 import { ProductPreviewSection } from "./components/ProductPreviewSection";
@@ -56,9 +55,7 @@ export default function App() {
       <HeroSection />
       {/* Pattern 8 — Animated product preview (typewriter) */}
       <ProductPreviewSection />
-      {/* Pattern 7 — Problem-first narrative */}
-      <ProblemSection />
-      {/* Pattern 4 — Stat counter (count-up already implemented) */}
+{/* Pattern 4 — Stat counter (count-up already implemented) */}
       <StatsSection />
       {/* Insight / ATS gap */}
       <InsightSection />
