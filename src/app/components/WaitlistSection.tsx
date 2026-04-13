@@ -18,11 +18,19 @@ const atsList = [
   "Other",
 ];
 
+const plans = [
+  "Starter — $99/mo (up to 5 open roles)",
+  "Growth — $299/mo (up to 20 open roles)",
+  "Scale — $799/mo (unlimited roles)",
+  "Not sure yet",
+];
+
 export function WaitlistSection() {
   const [form, setForm] = useState({
     name: "",
     email: "",
     role: "",
+    plan: "",
     context: "",
     atsOther: "",
   });
@@ -51,6 +59,7 @@ export function WaitlistSection() {
           name: form.name,
           email: form.email,
           role: form.role,
+          plan: form.plan,
           ats: form.context === "Other" ? form.atsOther : form.context,
         }),
       });
@@ -167,6 +176,14 @@ export function WaitlistSection() {
                 options={roles}
                 placeholder="Your role"
                 required
+              />
+
+              {/* Plan selection */}
+              <CustomSelect
+                value={form.plan}
+                onChange={handleSelectChange("plan")}
+                options={plans}
+                placeholder="Which plan interests you?"
               />
 
               {/* Optional context */}

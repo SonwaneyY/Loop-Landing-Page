@@ -78,8 +78,7 @@ export function PricingSection() {
             className="text-slate-500 max-w-lg mx-auto leading-relaxed"
             style={{ fontSize: "1rem" }}
           >
-            Every plan includes the full Loop engine — personalized rejection
-            emails, reply handling, and ATS integration.
+            Every plan includes the full Loop engine with personalized rejection emails, reply handling, and ATS integration.
           </p>
         </motion.div>
 
@@ -156,16 +155,6 @@ export function PricingSection() {
                 </ul>
               </div>
 
-              <a
-                href="#waitlist"
-                className={`mt-7 block text-center text-sm font-semibold py-3 rounded-xl transition-colors duration-200 ${
-                  tier.accent
-                    ? "bg-indigo-600 text-white hover:bg-indigo-700"
-                    : "bg-slate-100 text-slate-700 hover:bg-slate-200"
-                }`}
-              >
-                Join waitlist
-              </a>
             </motion.div>
           ))}
         </div>
